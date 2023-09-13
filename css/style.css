@@ -47,7 +47,6 @@ h1 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* min-width: 500px; */
 }
 
 .block-item {
@@ -55,7 +54,8 @@ h1 {
   border: 1px solid #546951;
   margin: 10px;
 }
-.title-item {
+
+.block-item .title-item {
   text-align: center;
   font-size: 20px;
   font-weight: 600;
@@ -63,11 +63,21 @@ h1 {
   padding: 10px;
 }
 
-.block-imgTank {
-  min-width: 400px;
+.block-item .blok-content {
+  display: flex;
+  justify-content: space-between;
 }
 
-.tank {
+.blok-content .block-imgTank {
+  flex: 0 0 10%;
+}
+
+.blok-content .tank-img {
+  filter: drop-shadow(-1px -1px 2px #918e8e);
   min-width: 80px;
   margin: 20px;
+}
+
+.blok-content .tank-content {
+  flex: 0 0 70%;
 }
