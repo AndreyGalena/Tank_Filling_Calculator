@@ -24,12 +24,16 @@ body {
   height: 100%;
 }
 
-h1 {
+.block-title {
   font-size: 35px;
   font-weight: 600;
   font-style: italic;
   color: rgb(19, 226, 19);
   padding: 20px 10px;
+}
+
+h2 {
+  padding: 0px 10px;
 }
 
 section {
