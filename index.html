@@ -14,210 +14,48 @@
 
 <body>
     <h1>Калькулятор</h1>
-    <!-- <canvas id="canvas">Обновите браузер</canvas> -->
 
-    <div class="container-for-tanks">
-        <!-- Ёмрасть №4 -->
+    <section>
         <div class="block-item">
-            <h2 class="title-item">Ёмкасть №4</h2>
-            <div class="blok-content">               
+            <div class="block-name">
+                <h2 class="title-item">Ёмкасть № </h2>
+                <input class="input-name" type="number" min="4" max="7" value="4">
+            </div>
+            <!-- Content -->
+            <div class="block-content">
+
                 <div class="block-imgTank">
+                    <div class="block-namberTank">
+                        <h3 class="namberTank">4</h3>
+                    </div>
                     <img class="tank-img tank-4" src="./img/pixil-tank_min.png" alt="tank">
                 </div>
-                <div class="tank-content">
-                    <!-- Заголовок поля -->
-                    <label for="name">Выбери культуру:</label><br>
-                    <!-- Выпадающее поле -->
-                    <select name="">
-                        <option value="corn">Кукуруза</option>
-                        <option value="wheat">Пшеница</option>
-                        <option value="rape">Рапс</option>
-                        <option value="barley">Ячмень</option>
+
+                <div class="block-outIn">
+                    <label for="cultura">Выбери культуру:</label>
+                    <select class="cultura" onchange="alert(this.value)" id="cultura">
+                        <!-- <option value="">Выберите культуру</option> -->
+                        <option value="1">Кукуруза</option>
+                        <option value="2">Пшиница</option>
+                        <option value="3">Рапс</option>
+                        <option value="4">Подсолнечник</option>
                     </select>
+                    <p class="block-input">
+                        Введите замер: 
+                        <!-- здесь формируется переменная gr -->
+                        <input class="inMeters" type="number" min="0" max="33" autofocus>
+                        метров.
+                    </p>
+                    <p class="block-output">
+                        До верха:
+                        <!-- сюда передаётся выход с формулы -->
+                        <span class="out">0</span>
+                        тон.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- Ёмрасть №5 -->
-        <div class="block-item">
-            <h2 class="title-item">Ёмкасть №5</h2>
-            <div class="blok-content">               
-                <div class="block-imgTank">
-                    <img class="tank-img tank-5" src="./img/pixil-tank_min.png" alt="tank">           
-                </div>
-                <div class="tank-content">
-                    <!-- Заголовок поля -->
-                    <label for="name">Выбери культуру:</label><br>
-                    <!-- Выпадающее поле -->
-                    <select name="">
-                        <option value="corn">Кукуруза</option>
-                        <option value="wheat">Пшеница</option>
-                        <option value="rape">Рапс</option>
-                        <option value="barley">Ячмень</option>
-                    </select>
-                </div>            
-            </div>
-        </div>
-        <!-- Ёмрасть №6 -->
-        <div class="block-item">
-            <h2 class="title-item">Ёмкасть №6</h2>
-            <div class="blok-content">               
-                <div class="block-imgTank">
-                    <img class="tank-img tank-6" src="./img/pixil-tank_min.png" alt="tank">    
-                </div>
-                <div class="tank-content">
-                    <!-- Заголовок поля -->
-                    <label for="name">Выбери культуру:</label><br>
-                    <!-- Выпадающее поле -->
-                    <select name="">
-                        <option value="corn">Кукуруза</option>
-                        <option value="wheat">Пшеница</option>
-                        <option value="rape">Рапс</option>
-                        <option value="barley">Ячмень</option>
-                    </select>
-                </div>    
-            </div>
-        </div>
-        <!-- Ёмрасть №7 -->
-        <div class="block-item">
-            <h2 class="title-item">Ёмкасть №7</h2>
-            <div class="blok-content">               
-                <div class="block-imgTank">
-                    <img class="tank-img tank-7" src="./img/pixil-tank_min.png" alt="tank">   
-                </div>
-                <div class="tank-content">
-                    <!-- Заголовок поля -->
-                    <label for="name">Выбери культуру:</label><br>
-                    <!-- Выпадающее поле -->
-                    <select name="">
-                        <option value="corn">Кукуруза</option>
-                        <option value="wheat">Пшеница</option>
-                        <option value="rape">Рапс</option>
-                        <option value="barley">Ячмень</option>
-                    </select>
-                </div>           
-            </div>
-        </div>
-        <!-- Ёмрасть №14 -->
-        <div class="block-item">
-            <h2 class="title-item">Ёмкасть №14</h2>
-            <div class="blok-content">               
-                <div class="block-imgTank">
-                    <img class="tank-img tank-14" src="./img/pixil-tank_min.png" alt="tank">    
-                </div>
-                <div class="tank-content">
-                    <!-- Заголовок поля -->
-                    <label for="name">Выбери культуру:</label><br>
-                    <!-- Выпадающее поле -->
-                    <select name="">
-                        <option value="corn">Кукуруза</option>
-                        <option value="wheat">Пшеница</option>
-                        <option value="rape">Рапс</option>
-                        <option value="barley">Ячмень</option>
-                    </select>
-                </div>            
-            </div>
-        </div>
-        <!-- Ёмрасть №15 -->
-        <div class="block-item">
-            <h2 class="title-item">Ёмкасть №15</h2>
-            <div class="blok-content">               
-                <div class="block-imgTank">
-                    <img class="tank-img tank-15" src="./img/pixil-tank_min.png" alt="tank">    
-                </div>
-                <div class="tank-content">
-                    <!-- Заголовок поля -->
-                    <label for="name">Выбери культуру:</label><br>
-                    <!-- Выпадающее поле -->
-                    <select name="">
-                        <option value="corn">Кукуруза</option>
-                        <option value="wheat">Пшеница</option>
-                        <option value="rape">Рапс</option>
-                        <option value="barley">Ячмень</option>
-                    </select>
-                </div>   
-            </div>
-        </div>
-        <!-- Ёмрасть №16 -->
-        <div class="block-item">
-            <h2 class="title-item">Ёмкасть №16</h2>
-            <div class="blok-content">               
-                <div class="block-imgTank">
-                    <img class="tank-img tank-16" src="./img/pixil-tank_min.png" alt="tank">   
-                </div>
-                <div class="tank-content">
-                    <!-- Заголовок поля -->
-                    <label for="name">Выбери культуру:</label><br>
-                    <!-- Выпадающее поле -->
-                    <select name="">
-                        <option value="corn">Кукуруза</option>
-                        <option value="wheat">Пшеница</option>
-                        <option value="rape">Рапс</option>
-                        <option value="barley">Ячмень</option>
-                    </select>
-                </div>           
-            </div>
-        </div>
-        <!-- Ёмрасть №17 -->
-        <div class="block-item">
-            <h2 class="title-item">Ёмкасть №17</h2>
-            <div class="blok-content">               
-                <div class="block-imgTank">
-                    <img class="tank-img tank-17" src="./img/pixil-tank_min.png" alt="tank">    
-                </div>
-                <div class="tank-content">
-                    <!-- Заголовок поля -->
-                    <label for="name">Выбери культуру:</label><br>
-                    <!-- Выпадающее поле -->
-                    <select name="">
-                        <option value="corn">Кукуруза</option>
-                        <option value="wheat">Пшеница</option>
-                        <option value="rape">Рапс</option>
-                        <option value="barley">Ячмень</option>
-                    </select>
-                </div>  
-            </div>
-        </div>
-        <!-- Ёмрасть №18 -->
-        <div class="block-item">
-            <h2 class="title-item">Ёмкасть №18</h2>
-            <div class="blok-content">               
-                <div class="block-imgTank">
-                    <img class="tank-img tank-18" src="./img/pixil-tank_min.png" alt="tank">  
-                </div>
-                <div class="tank-content">
-                    <!-- Заголовок поля -->
-                    <label for="name">Выбери культуру:</label><br>
-                    <!-- Выпадающее поле -->
-                    <select name="">
-                        <option value="corn">Кукуруза</option>
-                        <option value="wheat">Пшеница</option>
-                        <option value="rape">Рапс</option>
-                        <option value="barley">Ячмень</option>
-                    </select>
-                </div>           
-            </div>
-        </div>
-        <!-- Ёмрасть №19 -->
-        <div class="block-item">
-            <h2 class="title-item">Ёмкасть №19</h2>
-            <div class="blok-content">               
-                <div class="block-imgTank">
-                    <img class="tank-img tank-19" src="./img/pixil-tank_min.png" alt="tank">    
-                </div>
-                <div class="tank-content">
-                    <!-- Заголовок поля -->
-                    <label for="name">Выбери культуру:</label><br>
-                    <!-- Выпадающее поле -->
-                    <select name="">
-                        <option value="corn">Кукуруза</option>
-                        <option value="wheat">Пшеница</option>
-                        <option value="rape">Рапс</option>
-                        <option value="barley">Ячмень</option>
-                    </select>
-                </div>  
-            </div>
-        </div>
-    </div>
+    </section>
     <script src="js/file.js" type="module"></script>
 </body>
 
