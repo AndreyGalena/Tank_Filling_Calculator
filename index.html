@@ -15,44 +15,86 @@
 <body>
     <div class="block-title">
         <h1>Калькулятор</h1>
-        <h2>V-01.00.02</h2>
+        <h2>V-01.03</h2>
     </div>
-
+    <!-- Ёмкость №4-7 -->
     <section>
-        <div class="block-item">
+        <div class="block-item block-item-bg-one">
             <div class="block-name">
                 <h2 class="title-item">Ёмкасть № </h2>
-                <input class="input-name" type="number" min="4" max="7" value="4">
+                <input class="input-name-1" type="number" min="4" max="7" value="4">
             </div>
             <!-- Content -->
             <div class="block-content">
 
                 <div class="block-imgTank">
-                    <div class="block-namberTank">
-                        <h3 class="namberTank">4</h3>
+                    <div class="block-namberTank-1">
+                        <h3 class="namberTank-1">4</h3>
                     </div>
-                    <img class="tank-img tank-4" src="./img/pixil-tank_min.png" alt="tank">
+                    <img class="tank-img" src="./img/pixil-tank_min.png" alt="tank">
                 </div>
 
                 <div class="block-outIn">
                     <label for="cultura">Выбери культуру:</label>
                     <select class="cultura" onchange="alert(this.value)" id="cultura">
                         <!-- <option value="">Выберите культуру</option> -->
-                        <option value="1">Кукуруза</option>
-                        <option value="2">Пшиница</option>
+                        <option value="1">Пшеница</option>
+                        <option value="2">Кукуруза</option>
                         <option value="3">Рапс</option>
                         <option value="4">Подсолнечник</option>
                     </select>
                     <p class="block-input">
                         Введите замер: 
                         <!-- здесь формируется переменная gr -->
-                        <input class="inMeters" type="number" min="0" max="33" autofocus>
+                        <input class="inMeters-1" type="number" min="0" max="33" autofocus>
                         метров.
                     </p>
                     <p class="block-output">
                         До верха:
                         <!-- сюда передаётся выход с формулы -->
-                        <span class="out">0</span>
+                        <span class="out-1">0</span>
+                        тон.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Ёмкость №14-19 -->
+    <section>
+        <div class="block-item block-item-bg-two">
+            <div class="block-name">
+                <h2 class="title-item">Ёмкасть № </h2>
+                <input class="input-name-2" type="number" min="14" max="19" value="14">
+            </div>
+            <!-- Content -->
+            <div class="block-content">
+
+                <div class="block-imgTank">
+                    <div class="block-namberTank-2">
+                        <h3 class="namberTank-2">14</h3>
+                    </div>
+                    <img class="tank-img" src="./img/pixil-tank_min.png" alt="tank">
+                </div>
+
+                <div class="block-outIn">
+                    <label for="cultura">Выбери культуру:</label>
+                    <select class="cultura" onchange="alert(this.value)" id="cultura">
+                        <!-- <option value="">Выберите культуру</option> -->
+                        <option value="1">Пшеница</option>
+                        <option value="2">Кукуруза</option>
+                        <option value="3">Рапс</option>
+                        <option value="4">Подсолнечник</option>
+                    </select>
+                    <p class="block-input">
+                        Введите замер: 
+                        <!-- здесь формируется переменная gr -->
+                        <input class="inMeters-2" type="number" min="0" max="33" autofocus>
+                        метров.
+                    </p>
+                    <p class="block-output">
+                        До верха:
+                        <!-- сюда передаётся выход с формулы -->
+                        <span class="out-2">0</span>
                         тон.
                     </p>
                 </div>

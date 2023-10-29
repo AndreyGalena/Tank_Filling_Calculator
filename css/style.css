@@ -48,10 +48,20 @@ section {
   border: 1px solid black;
   max-width: 600px;
   margin: 10px;
+}
+
+.block-item-bg-one {
   background: linear-gradient(to left, rgba(238, 240, 240, 0.4), 
                             rgba(238, 240, 240, 0.9), 
                             rgba(234, 238, 237, 0.4) 110%),
-                            url(../img/пшеница.jfif) 0 0/cover no-repeat;
+                            url(../img/wheat.jfif) 0 0/cover no-repeat;
+}
+
+.block-item-bg-two {
+  background: linear-gradient(to left, rgba(238, 240, 240, 0.4), 
+                            rgba(238, 240, 240, 0.9), 
+                            rgba(234, 238, 237, 0.4) 110%),
+                            url(../img/kukuruza.jpg) 0 0/cover no-repeat;
 }
 /* ----- title ----- */
 .block-name {
@@ -65,7 +75,7 @@ section {
   margin-left: 5px;
 }
 
-.input-name {
+.input-name-1, .input-name-2 {
   font-size: 20px;
   font-weight: 900;
   max-width: 37px;
@@ -84,7 +94,8 @@ section {
   position: relative;
 }
 
-.block-namberTank {
+.block-namberTank-1, 
+.block-namberTank-2 {
   position: absolute;
   top: 45%;
   left: 30%;
@@ -114,14 +125,16 @@ section {
 .cultura {
   font-size: 15px;
   font-weight: 600;
-  padding: 10px 0 10px 0;
+  padding: 5px 0 5px 0;
+  margin: 5px 0;
 }
 
 .block-input {
   margin: 0 0 10px 4px;
 }
 
-.inMeters {
+.inMeters-1, 
+.inMeters-2 {
   border: 1px solid black;
   max-width: 50px;
   padding: 2px;
