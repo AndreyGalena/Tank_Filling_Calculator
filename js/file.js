@@ -1,21 +1,35 @@
 // Поле ввода для названия ёмкости.
-let inputNameOne     = document.querySelector('.input-name-1');
-let inputNameTwo  = document.querySelector('.input-name-2');
+let inputNameOne = document.querySelector('.input-name-1');
+let inputNameTwo = document.querySelector('.input-name-2');
 
 // Название ёмкости на img-tank
-let namberTankOne    = document.querySelector('.block-namberTank-1');
+let namberTankOne = document.querySelector('.block-namberTank-1');
 let namberTankTwo = document.querySelector('.block-namberTank-2');
 
 // Переменные in/out
-let inputInOne   = document.querySelector('.inMeters-1');
-let outOne       = document.querySelector('.out-1');
+let inputInOne = document.querySelector('.inMeters-1');
+let outOne     = document.querySelector('.out-1');
 
-let inputInTwo   = document.querySelector('.inMeters-2');
-let outTwo       = document.querySelector('.out-2');
+let inputInTwo = document.querySelector('.inMeters-2');
+let outTwo     = document.querySelector('.out-2');
 
-// inputIn.addEventListener('input', () => {
-//     out.innerHTML = (inputIn.value * 27.5);
-// });
+// Культура
+let culturaOne = document.querySelector('.culturaOne');
+let culturaTwo = document.querySelector('.culturaTwo');
+
+// Высота ёмкости.
+const heightOneTanc = 32;
+const heightTwoTanc = 19;
+
+// Значение культуры.
+culturaOne.onchange = function() {
+    console.log(+culturaOne.value); // на выходе int
+};
+
+culturaTwo.onchange = function() {
+    console.log(this.value); // на выходе string
+    console.log(Object.values(this));
+}
 
 // Вызывается при изменении значения в поле ввода(номер ёмкости).
 inputNameOne.oninput = function() {
@@ -44,5 +58,9 @@ inputInOne.oninput = function() {
 };
 // Ёмкость №14-19
 inputInTwo.oninput = function() {
-    outTwo.innerHTML = (inputInTwo.value * 27);
+    // Заполнено
+    // outTwo.innerHTML = (culturaTwo.value * inputInTwo.value) / heightTwoTanc;
+    // Осталось до верха заполнить.
+    let t = (culturaTwo.value * inputInTwo.value) / heightTwoTanc;
+    outTwo.innerHTML = culturaTwo.value - t;
 };

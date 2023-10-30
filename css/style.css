@@ -122,7 +122,8 @@ section {
 .block-outIn label {
   margin: 0 0 10px 4px;
 }
-.cultura {
+.culturaOne,
+.culturaTwo {
   font-size: 15px;
   font-weight: 600;
   padding: 5px 0 5px 0;
