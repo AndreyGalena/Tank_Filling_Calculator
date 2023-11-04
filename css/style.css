@@ -94,6 +94,7 @@ section {
 /* ----- img ----- */
 .block-imgTank {
   position: relative;
+  max-height: 160px;
 }
 
 .block-namberTankOne, 
