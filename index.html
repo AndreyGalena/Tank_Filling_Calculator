@@ -15,13 +15,13 @@
 <body>
     <div class="block-title">
         <h1>Калькулятор</h1>
-        <h2>V-01.05</h2>
+        <h2>V-01.06</h2>
     </div>
     <!-- Ёмкость №4-7 -->
     <section>
         <div class="block-item block-item-bg-one">
             <div class="block-name">
-                <h2 class="title-item">Ёмкасть № </h2>
+                <h2 class="title-item">Ёмкость № </h2>
                 <input class="input-nameOne" type="number" min="4" max="7" value="4">
             </div>
             <!-- Content -->
@@ -46,21 +46,24 @@
                     <p class="block-input">
                         Введите замер: 
                         <!-- здесь формируется переменная gr -->
-                        <input class="inMetersOne" type="number" min="0" max="33" autofocus>
+                        <input class="inMetersOne" type="number" min="0" max="32" autofocus>
                         метров.
                     </p>
-                    <p class="block-output">
-                        Загружено в ёмкость:
-                        <!-- сюда передаётся выход с формулы загружено -->
-                        <span class="outOneIn">0</span>
-                        тон.
-                    </p>
-                    <p class="block-output">
-                        До верха:
-                        <!-- сюда передаётся выход с формулы осталось -->
-                        <span class="outOne">0</span>
-                        тон.
-                    </p>
+                    <div class="block-out">
+                        <p class="block-output">
+                            Загружено в ёмкость:
+                            <!-- сюда передаётся выход с формулы загружено -->
+                            <span class="outOneIn">0</span>
+                            тон.
+                        </p>
+                        <p class="block-output">
+                            До верха:
+                            <!-- сюда передаётся выход с формулы осталось -->
+                            <span class="outOne">0</span>
+                            тон.
+                        </p>
+                    </div>
+                        
                 </div>
             </div>
         </div>
@@ -69,7 +72,7 @@
     <section>
         <div class="block-item block-item-bg-two">
             <div class="block-name">
-                <h2 class="title-item">Ёмкасть № </h2>
+                <h2 class="title-item">Ёмкость № </h2>
                 <input class="input-nameTwo" type="number" min="14" max="19" value="14">
             </div>
             <!-- Content -->
@@ -94,7 +97,7 @@
                     <p class="block-input">
                         Введите замер: 
                         <!-- здесь формируется переменная gr -->
-                        <input class="inMetersTwo" type="number" min="0" max="33" autofocus>
+                        <input class="inMetersTwo" type="number" min="0" max="19" autofocus>
                         метров.
                     </p>
                     <p class="block-output">

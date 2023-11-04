@@ -56,16 +56,26 @@ inputNameTwo.oninput = function() {
 // Вызывается при изменении значения в поле ввода(вводные данные).
 // Ёмкость №4-7
 inputInOne.oninput = function() {
-    let t = (culturaOne.value * inputInOne.value) / heightOneTanc;
-    outOne.innerHTML = Math.round(t); // округляем.
-    outOneIn.innerHTML = Math.round(culturaOne.value - t);
+    if (inputInOne.value > 32) {
+        outOne.innerHTML   = '?';
+        outOneIn.innerHTML = '?';
+    } else {
+        let t = (culturaOne.value * inputInOne.value) / heightOneTanc;
+        outOne.innerHTML = Math.round(t); // округляем.
+        outOneIn.innerHTML = Math.round(culturaOne.value - t);
+    };
 };
 // Ёмкость №14-19
 inputInTwo.oninput = function() {
     // Заполнено
     // outTwo.innerHTML = (culturaTwo.value * inputInTwo.value) / heightTwoTanc;
     // Осталось до верха заполнить.
-    let t = (culturaTwo.value * inputInTwo.value) / heightTwoTanc;
-    outTwo.innerHTML = Math.round(t);
-    outTwoIn.innerHTML = Math.round(culturaTwo.value - t);
+    if (inputInTwo.value > 19) {
+        outTwo.innerHTML = '?';
+        outTwoIn.innerHTML = '?';
+    } else {
+        let t = (culturaTwo.value * inputInTwo.value) / heightTwoTanc;
+        outTwo.innerHTML = Math.round(t);
+        outTwoIn.innerHTML = Math.round(culturaTwo.value - t);
+    };
 };
