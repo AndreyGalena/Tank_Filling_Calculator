@@ -22,14 +22,14 @@
         <div class="block-item block-item-bg-one">
             <div class="block-name">
                 <h2 class="title-item">Ёмкасть № </h2>
-                <input class="input-name-1" type="number" min="4" max="7" value="4">
+                <input class="input-nameOne" type="number" min="4" max="7" value="4">
             </div>
             <!-- Content -->
             <div class="block-content">
 
                 <div class="block-imgTank">
-                    <div class="block-namberTank-1">
-                        <h3 class="namberTank-1">4</h3>
+                    <div class="block-namberTankOne">
+                        <h3 class="namberTankOne">4</h3>
                     </div>
                     <img class="tank-img" src="./img/pixil-tank_min.png" alt="tank">
                 </div>
@@ -46,13 +46,19 @@
                     <p class="block-input">
                         Введите замер: 
                         <!-- здесь формируется переменная gr -->
-                        <input class="inMeters-1" type="number" min="0" max="33" autofocus>
+                        <input class="inMetersOne" type="number" min="0" max="33" autofocus>
                         метров.
                     </p>
                     <p class="block-output">
+                        Загружено в ёмкость:
+                        <!-- сюда передаётся выход с формулы загружено -->
+                        <span class="outOneIn">0</span>
+                        тон.
+                    </p>
+                    <p class="block-output">
                         До верха:
-                        <!-- сюда передаётся выход с формулы -->
-                        <span class="out-1">0</span>
+                        <!-- сюда передаётся выход с формулы осталось -->
+                        <span class="outOne">0</span>
                         тон.
                     </p>
                 </div>
@@ -64,14 +70,14 @@
         <div class="block-item block-item-bg-two">
             <div class="block-name">
                 <h2 class="title-item">Ёмкасть № </h2>
-                <input class="input-name-2" type="number" min="14" max="19" value="14">
+                <input class="input-nameTwo" type="number" min="14" max="19" value="14">
             </div>
             <!-- Content -->
             <div class="block-content">
 
                 <div class="block-imgTank">
-                    <div class="block-namberTank-2">
-                        <h3 class="namberTank-2">14</h3>
+                    <div class="block-namberTankTwo">
+                        <h3 class="namberTankTwo">14</h3>
                     </div>
                     <img class="tank-img" src="./img/pixil-tank_min.png" alt="tank">
                 </div>
@@ -88,13 +94,19 @@
                     <p class="block-input">
                         Введите замер: 
                         <!-- здесь формируется переменная gr -->
-                        <input class="inMeters-2" type="number" min="0" max="33" autofocus>
+                        <input class="inMetersTwo" type="number" min="0" max="33" autofocus>
                         метров.
+                    </p>
+                    <p class="block-output">
+                        Загружено в ёмкость:
+                        <!-- сюда передаётся выход с формулы загружено -->
+                        <span class="outTwoIn">0</span>
+                        тон.
                     </p>
                     <p class="block-output">
                         До верха:
                         <!-- сюда передаётся выход с формулы -->
-                        <span class="out-2">0</span>
+                        <span class="outTwo">0</span>
                         тон.
                     </p>
                 </div>

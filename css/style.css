@@ -75,7 +75,7 @@ section {
   margin-left: 5px;
 }
 
-.input-name-1, .input-name-2 {
+.input-nameOne, .input-nameTwo {
   font-size: 20px;
   font-weight: 900;
   max-width: 37px;
@@ -94,8 +94,8 @@ section {
   position: relative;
 }
 
-.block-namberTank-1, 
-.block-namberTank-2 {
+.block-namberTankOne, 
+.block-namberTankTwo {
   position: absolute;
   top: 45%;
   left: 30%;
@@ -134,8 +134,8 @@ section {
   margin: 0 0 10px 4px;
 }
 
-.inMeters-1, 
-.inMeters-2 {
+.inMetersOne, 
+.inMetersTwo {
   border: 1px solid black;
   max-width: 50px;
   padding: 2px;
