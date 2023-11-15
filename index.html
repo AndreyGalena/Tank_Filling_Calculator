@@ -15,7 +15,7 @@
 <body>
     <div class="block-title">
         <h1>Калькулятор</h1>
-        <h2>V-01.06</h2>
+        <h2>V-01.07</h2>
     </div>
     <!-- Ёмкость №4-7 -->
     <section>
@@ -38,15 +38,16 @@
                     <label for="culturaOne">Выбери культуру:</label>
                     <select class="culturaOne" id="cultura">
                         <!-- <option value="">Выберите культуру</option> -->
-                        <option value="5400">Пшеница</option>
+                        <option value="5200">Пшеница</option>
+                        <option value="4900">Ячмень</option>
                         <option value="5000">Кукуруза</option>
-                        <option value="5200">Рапс</option>
-                        <option value="2700">Подсолнечник</option>
+                        <option value="5100">Рапс</option>
+                        <option value="2600">Подсолнечник</option>
                     </select>
                     <p class="block-input">
                         Введите замер: 
                         <!-- здесь формируется переменная gr -->
-                        <input class="inMetersOne" type="number" min="0" max="32" autofocus>
+                        <input class="inMetersOne" type="number" min="0" max="33.5" autofocus>
                         метров.
                     </p>
                     <div class="block-out">
@@ -89,29 +90,32 @@
                     <label for="culturaTwo">Выбери культуру:</label>
                     <select class="culturaTwo" id="cultura">
                         <!-- <option value="">Выберите культуру</option> -->
-                        <option value="7200">Пшеница</option>
-                        <option value="6900">Кукуруза</option>
-                        <option value="7000">Рапс</option>
-                        <option value="3600">Подсолнечник</option>
+                        <option value="7000">Пшеница</option>
+                        <option value="6700">Ячмень</option>
+                        <option value="6800">Кукуруза</option>
+                        <option value="6900">Рапс</option>
+                        <option value="3500">Подсолнечник</option>
                     </select>
                     <p class="block-input">
                         Введите замер: 
                         <!-- здесь формируется переменная gr -->
-                        <input class="inMetersTwo" type="number" min="0" max="19" autofocus>
+                        <input class="inMetersTwo" type="number" min="0" max="24" autofocus>
                         метров.
                     </p>
-                    <p class="block-output">
-                        Загружено в ёмкость:
-                        <!-- сюда передаётся выход с формулы загружено -->
-                        <span class="outTwoIn">0</span>
-                        тон.
-                    </p>
-                    <p class="block-output">
-                        До верха:
-                        <!-- сюда передаётся выход с формулы -->
-                        <span class="outTwo">0</span>
-                        тон.
-                    </p>
+                    <div class="block-out">
+                        <p class="block-output">
+                            Загружено в ёмкость:
+                            <!-- сюда передаётся выход с формулы загружено -->
+                            <span class="outTwoIn">0</span>
+                            тон.
+                        </p>
+                        <p class="block-output">
+                            До верха:
+                            <!-- сюда передаётся выход с формулы -->
+                            <span class="outTwo">0</span>
+                            тон.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
